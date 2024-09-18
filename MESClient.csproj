@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\WcsWms\Gebhardt.StoreWare.WcsWms.Constants\Gebhardt.StoreWare.WcsWms.Constants.csproj" />
+    <ProjectReference Include="..\..\WcsWms\Gebhardt.StoreWare.WcsWms\Gebhardt.StoreWare.WcsWms.csproj" />
+    <ProjectReference Include="..\Common\Gebhardt.StoreWare.Wcs.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Gebhardt.Shared">
+      <HintPath>..\..\..\SharedAssemblies\SharedComponents\Gebhardt.Shared.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
